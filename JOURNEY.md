@@ -14,7 +14,7 @@
 
 Looked at two friends' projects for inspiration:
 
-- **Harshith's Algorithmic Collusion Detector** — a MARL + CNN system detecting tacit collusion between trading bots in a simulated limit order book. Four collusion schemes (wash trading, tape painting, spoofing, mirror trading), a C++14 simulator, and IPPO honest-agent validation.
+- **Algorithmic Collusion Detector** — a MARL + CNN system detecting tacit collusion between trading bots in a simulated limit order book. Four collusion schemes (wash trading, tape painting, spoofing, mirror trading), a C++14 simulator, and IPPO honest-agent validation.
 - **TOPOS v2** — a cognitive architecture experiment giving a frozen 7B LLM an external workspace (EMA state vector, ChromaDB episodic memory, NetworkX concept graph, ensemble curiosity module) to produce emergent personality without fine-tuning.
 
 Both were strong student projects. The goal was to find something at the same level or above — novel, publishable, buildable on a laptop, and built from scratch.
@@ -34,7 +34,7 @@ All four were viable. The final decision was to go with a project structurally s
 
 ### Why gig economy pricing collusion
 
-Harshith's project focused on financial markets (limit order books). The analog problem in ride-share / gig economy markets is less explored academically, more directly tied to ongoing antitrust litigation (real lawsuits against Uber and delivery platforms have cited algorithmic pricing coordination), and the simulator is a contribution in itself — no public MARL ride-share pricing sandbox exists.
+Project 1 focused on financial markets (limit order books). The analog problem in ride-share / gig economy markets is less explored academically, more directly tied to ongoing antitrust litigation (real lawsuits against Uber and delivery platforms have cited algorithmic pricing coordination), and the simulator is a contribution in itself — no public MARL ride-share pricing sandbox exists.
 
 The research question crystallised as:
 
