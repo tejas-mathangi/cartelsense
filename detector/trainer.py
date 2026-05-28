@@ -293,7 +293,7 @@ class Trainer:
         fpr       = fp / (fp + tn + 1e-8)   # false positive rate
 
         # AUC via trapezoidal rule
-        auc = self._auc(y_true, probs)
+        auc = self._auc(y_true, probs) if len(np.unique(y_true)) > 1 else -1.0
 
         return {
             "precision": round(precision, 4),
@@ -331,3 +331,6 @@ class Trainer:
         fprs_s = [p[0] for p in pairs]
         tprs_s = [p[1] for p in pairs]
         return float(np.trapezoid(tprs_s, fprs_s))
+
+        # trapz = getattr(np, "trapezoid", None) or getattr(np, "trapz")
+        # return float(trapz(tprs_s, fprs_s))
